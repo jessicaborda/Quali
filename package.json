@@ -1,0 +1,21 @@
+{
+  "name": "quali",
+  "version": "1.0.0",
+  "description": "Plataforma de capacitación online para pequeñas empresas",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "keywords": [
+    "capacitacion",
+    "cursos",
+    "online"
+  ],
+  "author": "",
+  "license": "ISC"
+}

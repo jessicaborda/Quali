@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora los cursos de capacitación online de Quali. Manipulación de alimentos, EPP, protocolos de emergencia y más.">
+  <title>Cursos - Quali</title>
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/base.css">
+  <link rel="stylesheet" href="../../styles/pages/cursos.css">
+  <link rel="stylesheet" href="../../styles/tablet.css">
+  <link rel="stylesheet" href="../../styles/desktop.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar--custom">
+      <div class="container">
+        <a href="../../index.html" class="navbar-brand">
+          <img src="../../assets/img/logo.svg" alt="Quali - Inicio" width="120" height="40">
+        </a>
+        <button 
+          class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-current="page">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../quali.html">Quali</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <label for="search-navbar" class="visually-hidden">Buscar cursos</label>
+            <input 
+              class="form-control rounded-pill" 
+              type="search" 
+              id="search-navbar"
+              placeholder="Buscar cursos..."
+              aria-label="Buscar cursos">
+          </form>
+          <div class="navbar__auth">
+            <a href="../auth/login.html" class="btn btn-light me-2">Iniciar sesión</a>
+            <a href="../auth/register.html" class="btn btn-outline-light">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero--courses" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">Explora los cursos que tu equipo necesita para trabajar seguro</h1>
+        <p class="hero__description">
+          En Quali encuentras cursos online, visuales y certificados, pensados para pequeñas empresas 
+          que buscan capacitar de manera práctica, rápida y efectiva. Todos los contenidos están 
+          actualizados, son fáciles de entender y accesibles desde cualquier dispositivo.
+        </p>
+        <form class="hero__search" role="search">
+          <label for="search-hero" class="visually-hidden">Buscar cursos</label>
+          <input 
+            class="hero__search-input" 
+            type="search" 
+            id="search-hero"
+            placeholder="Buscar cursos...">
+        </form>
+      </div>
+    </section>
+
+    <!-- Course Filters Section -->
+    <section class="course-filters" aria-labelledby="filters-title">
+      <h2 id="filters-title" class="visually-hidden">Filtrar cursos por categoría</h2>
+      
+      <div class="course-filters__categories">
+        <div class="course-select">
+          <label for="filter-food" class="visually-hidden">Filtrar: Alimentos</label>
+          <select class="course-select__dropdown" id="filter-food" name="filter-food">
+            <option value="" disabled selected>Alimentos</option>
+            <option value="curso-manipulacion.html">Manipulación higiénica de alimentos</option>
+            <option value="curso-bioseguridad.html">Bioseguridad para entornos laborales</option>
+          </select>
+        </div>
+        <div class="course-select">
+          <label for="filter-industry" class="visually-hidden">Filtrar: Industria</label>
+          <select class="course-select__dropdown" id="filter-industry" name="filter-industry">
+            <option value="" disabled selected>Industria</option>
+            <option value="curso-protocolos.html">Protocolos de evacuación y emergencia</option>
+            <option value="curso-bioseguridad.html">Bioseguridad para entornos laborales</option>
+          </select>
+        </div>
+        <div class="course-select">
+          <label for="filter-office" class="visually-hidden">Filtrar: Oficinas</label>
+          <select class="course-select__dropdown" id="filter-office" name="filter-office">
+            <option value="" disabled selected>Oficinas</option>
+            <option value="curso-protocolos.html">Protocolos de evacuación y emergencia</option>
+            <option value="curso-epp.html">Uso correcto de EPP</option>
+          </select>
+        </div>
+        <div class="course-select">
+          <label for="filter-services" class="visually-hidden">Filtrar: Servicios</label>
+          <select class="course-select__dropdown" id="filter-services" name="filter-services">
+            <option value="" disabled selected>Servicios</option>
+            <option value="curso-protocolos.html">Protocolos de evacuación y emergencia</option>
+            <option value="curso-epp.html">Uso correcto de EPP</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Course Cards -->
+      <div class="course-grid">
+        <article class="course-card">
+          <img 
+            class="course-card__image" 
+            src="../../assets/img/course-food-handling.jpg" 
+            alt="Curso de manipulación higiénica de alimentos"
+            width="400"
+            height="250"
+            loading="lazy">
+          <div class="course-card__content">
+            <h3 class="course-card__title">Manipulación higiénica de alimentos</h3>
+            <p class="course-card__description">
+              Aprende las prácticas esenciales para conservar, preparar y servir alimentos de forma segura.
+            </p>
+            <ul class="course-card__features">
+              <li>⏱️ Duración: 40 min</li>
+              <li>📄 Certificado inmediato</li>
+              <li>👉 Cumple con la normatividad sanitaria</li>
+            </ul>
+            <a href="curso-manipulacion.html" class="btn btn--secondary">Ver curso</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img 
+            class="course-card__image" 
+            src="../../assets/img/course-epp.jpg" 
+            alt="Curso de uso correcto de EPP"
+            width="400"
+            height="250"
+            loading="lazy">
+          <div class="course-card__content">
+            <h3 class="course-card__title">Uso correcto de EPP</h3>
+            <p class="course-card__description">
+              Conoce los equipos que salvan vidas y aprende cómo usarlos adecuadamente según el entorno laboral.
+            </p>
+            <ul class="course-card__features">
+              <li>⏱️ Duración: 30 min</li>
+              <li>📄 Certificado inmediato</li>
+              <li>👉 Ideal para planta y logística</li>
+            </ul>
+            <a href="curso-epp.html" class="btn btn--secondary">Ver curso</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img 
+            class="course-card__image" 
+            src="../../assets/img/course-evacuation.jpg" 
+            alt="Curso de protocolos de evacuación y emergencia"
+            width="400"
+            height="250"
+            loading="lazy">
+          <div class="course-card__content">
+            <h3 class="course-card__title">Protocolos de evacuación y emergencia</h3>
+            <p class="course-card__description">
+              Aprende qué hacer antes, durante y después de una emergencia en el lugar de trabajo.
+            </p>
+            <ul class="course-card__features">
+              <li>⏱️ Duración: 35 min</li>
+              <li>📄 Certificado inmediato</li>
+              <li>👉 Incluye simulacros básicos</li>
+            </ul>
+            <a href="curso-protocolos.html" class="btn btn--secondary">Ver curso</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img 
+            class="course-card__image" 
+            src="../../assets/img/course-biosecurity.jpg" 
+            alt="Curso de bioseguridad para entornos laborales"
+            width="400"
+            height="250"
+            loading="lazy">
+          <div class="course-card__content">
+            <h3 class="course-card__title">Bioseguridad para entornos laborales</h3>
+            <p class="course-card__description">
+              Domina las buenas prácticas de higiene y prevención para mantener entornos seguros.
+            </p>
+            <ul class="course-card__features">
+              <li>⏱️ Duración: 25 min</li>
+              <li>📄 Certificado inmediato</li>
+              <li>👉 Perfecto para oficinas y comercio</li>
+            </ul>
+            <a href="curso-bioseguridad.html" class="btn btn--secondary">Ver curso</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  
+
+    <!-- CTA Section -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta__content">
+        <h2 id="cta-title" class="cta__title">¿Listo para capacitar fácil, rápido y sin complicaciones?</h2>
+        <p class="cta__description">
+          Con Quali, accede a cursos 100% virtuales, certificados y diseñados especialmente 
+          para pequeñas empresas. Empieza hoy mismo y cumple con las normativas sin estrés.
+        </p>
+        <a href="../contacto.html" class="btn btn--primary">Empezar ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="../../assets/img/logo.svg" alt="Quali" class="footer__logo" width="120" height="40">
+      <p class="footer__copyright">© 2025 Quali. Todos los derechos reservados.</p>
+      <nav class="footer__nav" aria-label="Enlaces del pie de página">
+        <a href="../../index.html" class="footer__link">Inicio</a>
+        <a href="index.html" class="footer__link">Cursos</a>
+        <a href="../quali.html" class="footer__link">Quali</a>
+        <a href="../contacto.html" class="footer__link">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <script>
+    // Course filter navigation
+    document.querySelectorAll('.course-select__dropdown').forEach(select => {
+      select.addEventListener('change', function() {
+        if (this.value) {
+          window.location.href = this.value;
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

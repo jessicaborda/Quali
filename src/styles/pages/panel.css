@@ -1,0 +1,90 @@
+/* ===================================
+   PANEL PAGE STYLES
+   Panel de usuario
+   =================================== */
+
+/* Panel Cursos Section */
+.panel-cursos {
+  padding: 8%;
+}
+
+.panel-cursos__titulo {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.panel-cursos__grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+/* Curso Card */
+.curso-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--color-primary);
+  gap: 16px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.curso-card__imagen {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.curso-card__titulo {
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.curso-card__texto {
+  color: var(--color-text-inverse);
+  text-align: center;
+}
+
+.curso-card__progreso {
+  color: var(--color-text-inverse);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: var(--gray-background);
+  border-radius: 6px;
+  overflow: hidden;
+  height: 15px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.progress-bar__fill {
+  background-color: var(--color-secundario);
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+/* Responsive - Tablet */
+@media (min-width: 768px) {
+  .panel-cursos__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .curso-card {
+    width: calc(50% - 12px);
+  }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 1024px) {
+  .curso-card {
+    width: calc(25% - 18px);
+  }
+}

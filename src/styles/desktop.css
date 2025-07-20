@@ -1,0 +1,146 @@
+@media (min-width:1000px) {
+
+    /* CTA */
+
+    .cta_container_info__title {
+        width: 50%;
+    }
+
+    .cta_container_info__paragraph {
+        width: 50%;
+    }
+
+    /* Home */
+
+    .curse_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .we_section_container_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .benefits {
+        display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    gap: 24px;
+    }
+
+    .we_section_container_cards__icon {
+        height: 40px;
+    }
+
+    /* Quali */
+
+    .section_quali_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_quali_container__text {
+        width: 100%;
+    }
+
+    .section_quali_container__img {
+    width: 100%;
+}
+
+    .quali-objetivos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .quali-objetivos__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 50%;
+
+    }
+
+    .we_section_container_cards__icon {
+    height: 40px;
+}
+
+.section_quali_container__img {
+    order: 1;
+}
+
+    /* Cursos */
+
+
+    .course-filters {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .curse_detail_container__cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .user_detail_container__cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_cursos_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Single_curso */
+
+    .curso-detalle {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card_container {
+        order: 2;
+    }
+
+    .description_curse {
+        width: 60%;
+        display: flex;
+    }
+
+    /* Footer */
+    
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__logo {
+        margin-bottom: 0;
+    }
+
+    .footer__copyright {
+        margin-bottom: 0;
+    }
+
+}
+
+/* Ajustes para monitores grandes */
+@media (min-width: 1920px) {
+    .container,
+    .cta_container,
+    .section_quali_container,
+    .section_cursos_container {
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

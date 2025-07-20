@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo EPP - Quali</title>
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/base.css">
+  <link rel="stylesheet" href="../../styles/pages/curso.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar--custom">
+    <div class="container"> <img src="../../assets/img/logo.svg" alt="logo_quali"> <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="../quali.html">Quali</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
+        </ul>
+        <form class="d-flex me-3"> <input class="form-control rounded-pill" type="search" placeholder="Buscar">
+        </form> <a href="../auth/login.html" class="btn btn-light me-2">Iniciar</a> <a href="../auth/register.html"
+          class="btn btn-outline-light">Registrar</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+  <!-- Contenido principal -->
+  <div class="container my-5">
+    <h2 class="fw-bold mb-4">Curso: Uso correcto de EPP (Elementos de Protección Personal)</h2>
+    <div class="row">
+      <!-- Video principal -->
+      <div class="col-lg-9 col-12 mb-4">
+        <div class="ratio ratio-16x9 shadow-sm">
+          <iframe id="main-video" width="656" height="369" src="https://www.youtube.com/embed/e0v-6bG_i8c"
+            title="¿Qué es un EPP o EPI? (Equipos de Protección Personal o individual)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Texto descriptivo dinámico -->
+        <div class="card mt-5 p-4 shadow-sm">
+          <h5 id="video-title" class="fw-bold">Módulo 0 - ¿Qué es un EPP y por qué es obligatorio?
+          </h5>
+          <p id="video-description">Este módulo explica qué son los equipos de protección personal (EPP) y su importancia para reducir riesgos laborales. Conocerás la base legal y los beneficios de utilizarlos de manera adecuada. </p> <img src="../../assets/img/icon-detail.svg" alt="icon_detail-quali" class="mt-3"
+            style="width: 40px;">
+        </div>
+      </div>
+
+      <!-- Lista lateral de videos -->
+      <div class="col-lg-3 col-12">
+        <div class="d-flex flex-column gap-3">
+          <!-- Video 1 -->
+          <div class="card shadow-sm">
+            <div class="ratio ratio-16x9">
+              <iframe width="656" height="369" src="https://www.youtube.com/embed/_de3QF5wEzI" title="Tipos de Equipos de protección personal EPP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card-body p-2">
+              <a href="#" class="video-link stretched-link text-decoration-none fw-semibold"
+                data-video="https://www.youtube.com/embed/_de3QF5wEzI" data-title="Módulo 1 - Introducción"
+                data-description="En este video aprenderás los diferentes tipos de EPP y su función específica en la protección del trabajador. Descubrirás cuál usar según la tarea y el nivel de riesgo.">
+                Módulo 1 - Tipos de EPP: guantes, casco, gafas, calzado, ropa
+              </a>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="card shadow-sm">
+            <div class="ratio ratio-16x9">
+              <iframe width="656" height="369" src="https://www.youtube.com/embed/_gbPvR9S7E4" title="Correcta colocación y retiro del Equipo de Protección Personal." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card-body p-2">
+              <a href="#" class="video-link stretched-link text-decoration-none fw-semibold"
+                data-video="https://www.youtube.com/embed/_gbPvR9S7E4" data-title="Módulo 2 - Higiene Personal"
+                data-description="Este módulo enseña el paso a paso para colocarse cada equipo de protección personal de forma segura. Una guía práctica para garantizar la máxima eficacia y evitar accidentes.">
+                Módulo 2 - Colocación correcta de EPP
+              </a>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="card shadow-sm">
+            <div class="ratio ratio-16x9">
+              <iframe width="656" height="369" src="https://www.youtube.com/embed/u-ydjX_yVHo" title="Limpieza de Equipo de Protección Personal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card-body p-2">
+              <a href="#" class="video-link stretched-link text-decoration-none fw-semibold"
+                data-video="https://www.youtube.com/embed/u-ydjX_yVHo" data-title="Módulo 3 - Contaminación Cruzada"
+                data-description="Aprende cómo conservar tus equipos de protección personal en óptimas condiciones. El video explica los cuidados básicos de limpieza, almacenamiento y reposición para asegurar su durabilidad y efectividad.">
+                Módulo 3 - Mantenimiento y limpieza
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mainVideo = document.getElementById("main-video");
+      const videoTitle = document.getElementById("video-title");
+      const videoDescription = document.getElementById("video-description");
+      const links = document.querySelectorAll(".video-link");
+
+      links.forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+
+          // Cambiar video
+          const newSrc = link.getAttribute("data-video");
+          mainVideo.setAttribute("src", newSrc);
+
+          // Cambiar título y descripción
+          videoTitle.textContent = link.getAttribute("data-title");
+          videoDescription.textContent = link.getAttribute("data-description");
+
+          // Subir la vista al video principal
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="../../assets/img/logo.svg" alt="Quali" class="footer__logo" width="120" height="40">
+      <p class="footer__copyright">© 2025 Quali. Todos los derechos reservados.</p>
+      <nav class="footer__nav" aria-label="Enlaces del pie de página">
+        <a href="../../index.html" class="footer__link">Inicio</a>
+        <a href="index.html" class="footer__link">Cursos</a>
+        <a href="../quali.html" class="footer__link">Quali</a>
+        <a href="../contacto.html" class="footer__link">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quali - Plataforma de capacitación online para pequeñas empresas. Cursos certificados en manipulación de alimentos, EPP, evacuación y más.">
+  <title>Quali - Capacitación Online para Empresas</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/pages/home.css">
+  <link rel="stylesheet" href="styles/tablet.css">
+  <link rel="stylesheet" href="styles/desktop.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar--custom">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/img/logo.svg" alt="Quali - Inicio" width="120" height="40">
+        </a>
+        <button 
+          class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/cursos/index.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/quali.html">Quali</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <label for="search-navbar" class="visually-hidden">Buscar cursos</label>
+            <input 
+              class="form-control rounded-pill" 
+              type="search" 
+              id="search-navbar"
+              placeholder="Buscar cursos..."
+              aria-label="Buscar cursos">
+          </form>
+          <div class="navbar__auth">
+            <a href="pages/auth/login.html" class="btn btn-light me-2">Iniciar sesión</a>
+            <a href="pages/auth/register.html" class="btn btn-outline-light">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">Capacitar a tu equipo nunca fue tan sencillo</h1>
+        <p class="hero__subtitle">Hazlo fácil con Quali</p>
+        <p class="hero__description">
+          Cursos online certificados en temas clave como manipulación de alimentos, 
+          EPP, evacuación y más. Pensado para pequeñas empresas como la tuya.
+        </p>
+        <form class="hero__search" role="search">
+          <label for="search-hero" class="visually-hidden">Buscar cursos</label>
+          <input 
+            class="hero__search-input" 
+            type="search" 
+            id="search-hero"
+            placeholder="Buscar cursos...">
+        </form>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" aria-labelledby="courses-title">
+      <div class="courses__info">
+        <h2 id="courses-title" class="courses__title">Explora nuestros cursos esenciales</h2>
+        <p class="courses__description">
+          Cada curso está diseñado para ser claro, visual y útil desde el primer minuto. 
+          Cumple con los requerimientos legales y entrega certificados listos para imprimir.
+        </p>
+        <a href="pages/cursos/index.html" class="btn btn--primary">Ver cursos</a>
+        <img 
+          class="courses__detail-icon" 
+          src="assets/img/icon-detail.svg" 
+          alt="" 
+          aria-hidden="true"
+          width="100" 
+          height="100">
+      </div>
+      
+      <!-- Course Categories -->
+      <div class="courses__categories">
+        <div class="course-select">
+          <label for="category-food" class="visually-hidden">Categoría: Manipulación de alimentos</label>
+          <select class="course-select__dropdown" id="category-food" name="category-food">
+            <option value="" disabled selected>Manipulación de alimentos</option>
+            <option value="curso-manipulacion" >Buenas prácticas de manufactura (BPM)</option>
+            <option value="curso-higiene">Higiene y Bioseguridad</option>
+          </select>
+        </div>
+        <div class="course-select">
+          <label for="category-safety" class="visually-hidden">Categoría: Seguridad en el trabajo</label>
+          <select class="course-select__dropdown" id="category-safety" name="category-safety">
+            <option value="" disabled selected>Seguridad en el trabajo</option>
+            <option value="epp">Uso de EPP</option>
+            <option value="breaks">Pausas activas</option>
+          </select>
+        </div>
+        <div class="course-select">
+          <label for="category-emergency" class="visually-hidden">Categoría: Protocolos de emergencia</label>
+          <select class="course-select__dropdown" id="category-emergency" name="category-emergency">
+            <option value="" disabled selected>Protocolos de emergencia</option>
+            <option value="curso-primeros-auxilios">Primeros auxilios</option>
+            <option value="curso-evacuacion">Protocolos de evacuación</option>
+          </select>
+        </div>
+        <div class="course-select">
+          <label for="category-service" class="visually-hidden">Categoría: Atención al cliente</label>
+          <select class="course-select__dropdown" id="category-service" name="category-service">
+            <option value="" disabled selected>Atención al cliente</option>
+            <option value="communication">Comunicación efectiva</option>
+            <option value="conflict">Manejo de conflictos</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" aria-labelledby="about-title">
+      <div class="about__intro">
+        <h2 id="about-title" class="about__title">Creemos que capacitar no debería ser complicado</h2>
+        <p class="about__description">
+          En Quali, entendemos los retos de las pequeñas empresas: poco tiempo, equipos diversos 
+          y la necesidad de cumplir con normativas laborales. Por eso diseñamos una plataforma 
+          que simplifica la capacitación, sin perder calidad ni seriedad.
+        </p>
+      </div>
+      
+      <!-- Benefits Cards -->
+      <div class="benefits">
+        <article class="benefit-card">
+          <img 
+            class="benefit-card__icon" 
+            src="assets/img/icon-benefit-visual.svg"
+            alt=""
+            aria-hidden="true"
+            width="64" 
+            height="64">
+          <h3 class="benefit-card__title">Capacitación visual, rápida y efectiva</h3>
+          <p class="benefit-card__description">
+            Nuestros cursos están pensados para que cualquier persona, sin importar su experiencia previa,
+            entienda fácilmente conceptos clave. Usamos recursos visuales, ejemplos reales y lenguaje claro.
+          </p>
+          <img 
+          class="courses__detail-icon" 
+          src="assets/img/icon-detail.svg" 
+          alt="" 
+          aria-hidden="true"
+          width="100" 
+          height="100">
+        </article>
+        <article class="benefit-card">
+          <img 
+            class="benefit-card__icon" 
+            src="assets/img/icon-benefit-certificate.svg"
+            alt=""
+            aria-hidden="true"
+            width="64" 
+            height="64">
+          <h3 class="benefit-card__title">Certificación inmediata y válida</h3>
+          <p class="benefit-card__description">
+            Al finalizar cada curso, tu equipo podrá descargar un certificado personalizado que respalda el
+            aprendizaje y sirve como evidencia de cumplimiento ante auditorías o inspecciones.
+          </p>
+          <img 
+          class="courses__detail-icon" 
+          src="assets/img/icon-detail.svg" 
+          alt="" 
+          aria-hidden="true"
+          width="100" 
+          height="100">
+        </article>
+        <article class="benefit-card">
+          <img 
+            class="benefit-card__icon" 
+            src="assets/img/icon-benefit-device.svg"
+            alt=""
+            aria-hidden="true"
+            width="64" 
+            height="64">
+          <h3 class="benefit-card__title">Accede desde cualquier dispositivo</h3>
+          <p class="benefit-card__description">
+            No necesitas instalar nada. Quali funciona desde cualquier navegador, ya sea en computador o
+            celular. Ideal para equipos que están en campo, oficina o teletrabajo.
+          </p>
+          <img 
+          class="courses__detail-icon" 
+          src="assets/img/icon-detail.svg" 
+          alt="" 
+          aria-hidden="true"
+          width="100" 
+          height="100">
+        </article>
+      </div>
+      
+      <a href="pages/quali.html" class="btn btn--primary">Conócenos</a>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta__content">
+        <h2 id="cta-title" class="cta__title">¿Listo para capacitar fácil, rápido y sin complicaciones?</h2>
+        <p class="cta__description">
+          Con Quali, accede a cursos 100% virtuales, certificados y diseñados especialmente 
+          para pequeñas empresas. Empieza hoy mismo y cumple con las normativas sin estrés.
+        </p>
+        <a href="pages/contacto.html" class="btn btn--primary">Empezar ahora</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="assets/img/logo.svg" alt="Quali" class="footer__logo" width="120" height="40">
+      <p class="footer__copyright">© 2025 Quali. Todos los derechos reservados.</p>
+      <nav class="footer__nav" aria-label="Enlaces del pie de página">
+        <a href="index.html" class="footer__link">Inicio</a>
+        <a href="pages/cursos/index.html" class="footer__link">Cursos</a>
+        <a href="pages/quali.html" class="footer__link">Quali</a>
+        <a href="pages/contacto.html" class="footer__link">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

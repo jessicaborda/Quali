@@ -1,0 +1,96 @@
+/* ===================================
+   SINGLE CURSO PAGE STYLES
+   Página de detalle de un curso individual
+   =================================== */
+
+/* Curso Detalle Section */
+.curso-detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+  gap: 80px;
+}
+
+.curso-detalle__descripcion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  text-align: left;
+  gap: 16px;
+  order: 2;
+}
+
+.curso-detalle__lista {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.curso-detalle__lista li {
+  margin-bottom: 8px;
+}
+
+.curso-detalle__icono {
+  width: 40px;
+  margin: 16px 0;
+}
+
+/* Curso Card */
+.curso-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: fit-content;
+  padding: 24px;
+  background-color: var(--color-primary);
+  gap: 16px;
+  border-radius: 4px;
+}
+
+.curso-card__imagen {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.curso-card__titulo {
+  color: var(--color-secondary);
+}
+
+.curso-card__texto {
+  color: var(--color-text-inverse);
+}
+
+.curso-card__detalles {
+  list-style: none;
+  padding: 0;
+}
+
+.curso-card__detalles li {
+  color: var(--color-text-inverse);
+  padding: 4px 0;
+}
+
+.curso-card__nota {
+  color: var(--color-text-inverse);
+  font-style: italic;
+}
+
+/* Responsive - Tablet */
+@media (min-width: 768px) {
+  .curso-detalle {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .curso-detalle__descripcion {
+    flex: 2;
+    order: 2;
+  }
+
+  .curso-card {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+  }
+}

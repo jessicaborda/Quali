@@ -1,0 +1,113 @@
+/* ========================================
+   CURSOS PAGE STYLES
+   ======================================== */
+
+/* Hero variant for courses page */
+.hero--courses {
+  background-image: 
+    linear-gradient(to bottom, var(--color-primary), rgba(26, 46, 102, 0.7)),
+    url('../../assets/img/hero.png');
+}
+
+/* ========================================
+   COURSE FILTERS
+   ======================================== */
+
+.course-filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding: var(--space-2xl) var(--space-xl);
+}
+
+.course-filters__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.course-select__dropdown {
+  width: 100%;
+  padding: var(--space-sm); 
+}
+
+@media (min-width: 768px) {
+  .course-select__dropdown {
+    width: 200px;
+  }
+  .course-filters__categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .course-filters__categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========================================
+   COURSE GRID
+   ======================================== */
+
+.course-grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   COURSE CARD
+   ======================================== */
+
+.course-card {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.course-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-card__content {
+  padding: var(--space-lg);
+}
+
+.course-card__title {
+  font-size: var(--text-lg);
+  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.course-card__description {
+  color: var(--color-text-inverse);
+  margin-bottom: var(--space-md);
+}
+
+.course-card__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--space-lg);
+}
+
+.course-card__features li {
+  font-size: var(--text-sm);
+  color: var(--color-text-inverse);
+  padding: var(--space-xs) 0;
+}

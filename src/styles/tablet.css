@@ -1,0 +1,51 @@
+@media (min-width:700px) {
+
+    /* Cusos */
+    .curse_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Quali */
+
+    .we_section_container_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .we_section_container_cards__card {
+        width: 100%;
+    }
+
+    /* Contacto */
+
+    .section_contact_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_contact_description {
+        width: 50%;
+    }
+
+    .contact__details {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--color-text-secondary);
+    }
+
+    .login_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.register_container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+}

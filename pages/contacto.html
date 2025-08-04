@@ -5,48 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style_contacto.css">
 </head>
 
 <body>
     <!-- Header principal -->
-    <header>
+    <header class="header_container">
         <img src="/img/logo.svg" alt="logo_quali">
-        <nav>
-            <a href="home.html">Inicio</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="pquali.html">Quali</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <div>
-            <input type="text" id="search" placeholder="Buscar...">
-        </div>
-        <nav>
-            <a href="login.html">Iniciar Sesión</a>
-            <a href="register.html">Registrar</a>
-        </nav>
+        <section class="header_container_menu">
+            <nav class="header_container_menu__nav">
+                <a class="header_container_menu__item" href="home.html">Inicio</a>
+                <a class="header_container_menu__item" href="cursos.html">Cursos</a>
+                <a class="header_container_menu__item" href="quali.html">Quali</a>
+                <a class="header_container_menu__item" href="contacto.html">Contacto</a>
+            </nav>
+            <div>
+                <input class="header_container__input" type="text" id="search" placeholder="Buscar...">
+            </div>
+            <nav class="header_container_menu__nav">
+                <a class="header_container_menu__item" href="login.html">Iniciar Sesión</a>
+                <a class="header_container_menu__item" href="register.html">Registrar</a>
+            </nav>
+        </section>
     </header>
-    <hr>
     <main>
         <!-- Hero -->
-        <section>
-            <h1>Lorem ipsum</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fuga quibusdam eos sint nemo accusamus illum
-                animi autem ducimus ullam quo aut fugiat ea facilis, aperiam quisquam est atque optio?</p>
-            <input type="text" id="search" placeholder="Buscar...">
+        <section class="hero_container">
+            <article class="hero_container_info">
+                <h1>Capacitar a tu equipo, nunca fue tan sencillo</h1>
+                <p class="container_info__paragraph">Cursos online certificados en temas clave como manipulación de alimentos, EPP, evacuación y más. Pensado para pequeñas empresas como la tuya.</p>
+            </article>
         </section>
-        <hr>
         <!-- Información de contacto -->
-        <section>
-            <article>
+        <section class="section_contact_container">
+            <article class="section_contact_description">
                 <h4>Subtítulo</h4>
                 <h2>Lorem ipsum</h2>
-                <div>
-                    <div>
+                <div class="section_contact_info">
+                    <div class="section_contact_info__phone">
                         <img src="" alt="">
                         <h3>Teléfono</h3>
                         <h4>3204431290</h4>
                     </div>
-                    <div>
+                    <div class="section_contact_info__email">
                         <img src="" alt="">
                         <h3>Email</h3>
                         <h4>info@wdesignkit.com</h4>
@@ -54,59 +56,57 @@
                 </div>
             </article>
             <!-- Formulario contacto -->
-            <form action="">
-                <label for="user_name">
+            <form class="section_contact_form" action="">
+                <label class="contact_form__label" for="user_name">
                     <span>Nombre completo</span>
-                    <input type="text" name="user_name" id="user_name" required>
+                    <input class="contact_form__input" type="text" name="user_name" id="user_name" required>
                 </label>
-                <br><br>
-                <label for="email">
+                <label class="contact_form__label" for="email">
                     <span>Correso electrónico</span>
-                    <input type="text" name="email" id="email" required>
+                    <input class="contact_form__input" type="text" name="email" id="email" required>
                 </label>
-                <label for="phone">
+                <label class="contact_form__label" for="phone">
                     <span>Teléfono</span>
-                    <input type="number" name="phone" id="phone">
+                    <input class="contact_form__input" type="number" name="phone" id="phone">
                 </label>
-                <br><br>
-                <label for="message">
+                <label class="contact_form__label_message" for="message">
                     <span>Mensaje</span>
-                    <input type="text" name="message" id="message">
+                    <input class="contact_form__input" type="text" name="message" id="message">
                 </label>
                 <label for="legal">
                     <input type="checkbox">
                     He leído la Política de Privacidad y acepto el tratamiento de mis datos para el trámite de la solicitud realizada.*
                 </label>
-                <br><br>
-                <button type="submit">Enviar</button>
+                <button class="btn_primary" type="submit">Enviar</button>
             </form>
         </section>
         <hr>
         <!-- CTA -->
-        <section>
-            <article>
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquam modi voluptatum nam quis, ab
-                    distinctio rerum odio illo iste tempora quas quam facilis itaque quo, dicta, omnis similique nisi!
-                </p>
-                <img src="/img/icon_detail.svg" alt="icon_detail-quali">
+        <section class="cta_container">
+            <article class="cta_container_info">
+                <h1 class="cta_container_info__title">¿Listo para capacitar fácil, rápido y sin complicaciones?</h2>
+                    <p class="cta_container_info__paragraph">Con Quali, accede a cursos 100% virtuales, certificados y
+                        diseñados especialmente para pequeñas empresas. Empieza hoy mismo y cumple con las normativas
+                        sin estrés.
+                    </p>
+                    <button class="btn_primary"><a href="/pages/contacto.html">Contáctanos</a></button>
+                    <img class="icon_detail_primary" src="/img/icon_detail.svg" alt="icon_detail-quali">
             </article>
         </section>
     </main>
-    <hr>
     <!-- Footer principal -->
-    <footer>
-        <div>
-            <img src="/img/logo.svg" alt="logo_quali">
+    <footer class="footer_container">
+        <div class="footer_container_logo">
+            <img class="logo_quali" src="/img/logo.svg" alt="logo_quali">
         </div>
-        <nav>
-            <a href="home.html">Inicio</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="quali.html">Quali</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="footer_container_menu">
+            <a class="footer_container_menu_item" href="home.html">Inicio</a>
+            <a class="footer_container_menu_item" href="cursos.html">Cursos</a>
+            <a class="footer_container_menu_item" href="quali.html">Quali</a>
+            <a class="footer_container_menu_item" href="contacto.html">Contacto</a>
         </nav>
         <div>
-            <h5>Copyright 2025 Quali</h5>
+            <h5 class="footer_copyright">Copyright 2025 Quali</h5>
         </div>
     </footer>
 

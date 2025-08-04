@@ -5,68 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
     <!-- Header principal -->
-    <header>
+    <header class="header_container">
         <img src="/img/logo.svg" alt="logo_quali">
-        <nav>
-            <a href="home.html">Inicio</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="quali.html">Quali</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <div>
-            <input type="text" id="search" placeholder="Buscar...">
-        </div>
-        <nav>
-            <a href="login.html">Iniciar Sesión</a>
-            <a href="register.html">Registrar</a>
-        </nav>
+        <section class="header_container_menu">
+            <nav class="header_container_menu__nav">
+                <a class="header_container_menu__item" href="home.html">Inicio</a>
+                <a class="header_container_menu__item" href="cursos.html">Cursos</a>
+                <a class="header_container_menu__item" href="quali.html">Quali</a>
+                <a class="header_container_menu__item" href="contacto.html">Contacto</a>
+            </nav>
+            <div>
+                <input class="header_container__input" type="text" id="search" placeholder="Buscar...">
+            </div>
+            <nav class="header_container_menu__nav">
+                <a class="header_container_menu__item" href="login.html">Iniciar Sesión</a>
+                <a class="header_container_menu__item" href="register.html">Registrar</a>
+            </nav>
+        </section>
     </header>
-    <hr>
     <!-- Sección para iniciar sesión -->
-    <section>
-        <article>
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab ullam ut veniam tempore id quos quam,
-                adipisci laborum fuga non repudiandae sit expedita quasi? Possimus, odit aliquam! Molestias, suscipit!
-            </p>
-        </article>
-        <div>
-            <figure>
-                <img src="" alt="icon_user">
-            </figure>
-            <form action="">
-                <label for="user_name">
-                    <span>Usuario</span>
-                    <input type="text" name="user_name" id="user_name" required>
-                </label>
-                <br><br>
-                <label for="password">
-                    <span>Contraseña</span>
-                    <input type="text" name="password" id="password" required>
-                </label>
-                <br><br>
-                <button type="submit">Iniciar sesión</button>
-            </form>
-        </div>
+    <main>
+        <section>
+            <article>
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab ullam ut veniam tempore id quos
+                    quam,
+                    adipisci laborum fuga non repudiandae sit expedita quasi? Possimus, odit aliquam! Molestias,
+                    suscipit!
+                </p>
+            </article>
+            <div>
+                <figure>
+                    <img src="" alt="icon_user">
+                </figure>
+                <form action="">
+                    <label for="user_name">
+                        <span>Usuario</span>
+                        <input type="text" name="user_name" id="user_name" required>
+                    </label>
+                    <br><br>
+                    <label for="password">
+                        <span>Contraseña</span>
+                        <input type="text" name="password" id="password" required>
+                    </label>
+                    <br><br>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+            </div>
+    </main>
     </section>
-    <hr>
     <!-- Footer principal -->
-    <footer>
-        <div>
-            <img src="/img/logo.svg" alt="logo_quali">
+    <footer class="footer_container">
+        <div class="footer_container_logo">
+            <img class="logo_quali" src="/img/logo.svg" alt="logo_quali">
         </div>
-        <nav>
-            <a href="home.html">Inicio</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="quali.html">Quali</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="footer_container_menu">
+            <a class="footer_container_menu_item" href="home.html">Inicio</a>
+            <a class="footer_container_menu_item" href="cursos.html">Cursos</a>
+            <a class="footer_container_menu_item" href="quali.html">Quali</a>
+            <a class="footer_container_menu_item" href="contacto.html">Contacto</a>
         </nav>
         <div>
-            <h5>Copyright 2025 Quali</h5>
+            <h5 class="footer_copyright">Copyright 2025 Quali</h5>
         </div>
     </footer>
 </body>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single_curso</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style_single_curso.css">
 </head>
 
 <body>
@@ -33,19 +34,18 @@
         <section class="hero_container">
             <article class="hero_container_info">
                 <h1>Curso de manipulación Higiénica de Alimentos</h1>
-                <p class="hero_container_info__paragraph">Manipula alimentos de forma segura y cumple con la norma
+                <p class="container_info__paragraph">Manipula alimentos de forma segura y cumple con la norma
                     sanitaria</p>
                 <input class="hero_container_info__input" type="text" id="search" placeholder="Buscar...">
             </article>
         </section>
         <!-- Sección descripción del curso -->
-        <section>
-            <article>
+        <section class="section_description_curse_container">
+            <article class="description_curse">
                 <h2>Manipulación Higiénica de Alimentos</h2>
                 <p>Aprende de forma visual y sencilla las prácticas esenciales para conservar, preparar y servir
                     alimentos sin riesgos. Este curso está alineado con las normativas de higiene alimentaria y es ideal
                     para restaurantes, cafeterías, panaderías, y cualquier empresa del sector de alimentos.</p>
-                <br>
                 <p>¿Qué incluye este curso?
                 <ul>
                     <li>Contenido audiovisual fácil de entender</li>
@@ -54,7 +54,6 @@
                     <li>Acceso ilimitado por 30 días</li>
                 </ul>
                 </p>
-                <br>
                 <p>Temario:
                 <ul>
                     <li>Introducción a la seguridad alimentaria</li>
@@ -65,7 +64,6 @@
                     <li>Evaluación final + emisión de certificado</li>
                 </ul>
                 </p>
-                <br>
                 <p>¿A quién va dirigido?
                 <ul>
                     <li>Manipuladores de alimentos en restaurantes, cafeterías, hoteles o producción</li>
@@ -73,53 +71,51 @@
                     <li>Personal nuevo que requiere certificación rápida</li>
                 </ul>
                 </p>
-                <br>
                 <p>
                     Capacita a tu equipo o certifícate tú hoy mismo.</p>
-                <img src="/img/icon_detail.svg" alt="icon_detail-quali">
-                <button><a href="curso_id.html">Empezar curso</a></button>
+                <img class="icon_detail_primary" src="/img/icon_detail.svg" alt="icon_detail-quali">
+                <button class="btn_primary"><a href="curso_id.html">Empezar curso</a></button>
             </article>
             <!-- Card descripción del curso -->
-            <article>
-                <img src="/img/img_manipulacion-de-alimentos.jpg" alt="">
+            <article class="card_container">
+                <img class="card_container_img" src="/img/img_manipulacion-de-alimentos.jpg" alt="">
                 <h3>Manipulación higiénica de alimentos</h3>
-                <p>Aprende las prácticas esenciales para conservar, preparar y servir alimentos de forma segura.</p>
+                <p class="container_info__paragraph">Aprende las prácticas esenciales para conservar, preparar y servir alimentos de forma segura.</p>
                 <ul>
-                    <li>Duración: 40 min</li>
-                    <li>Nivel: Básico</li>
-                    <li>Modalidad: 100% online</li>
-                    <li>Certificado inmediato</li>
+                    <li class="list_card">Duración: 40 min</li>
+                    <li class="list_card">Nivel: Básico</li>
+                    <li class="list_card">Modalidad: 100% online</li>
+                    <li class="list_card">Certificado inmediato</li>
                 </ul>
-                <p>👉 Cumple con la normatividad sanitaria para establecimientos de alimentos.</p>
+                <p class="container_info__paragraph">👉 Cumple con la normatividad sanitaria para establecimientos de alimentos.</p>
             </article>
-            <hr>
+        </section>
             <!-- CTA -->
-            <section>
-                <article>
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aliquam modi voluptatum nam quis,
-                        ab
-                        distinctio rerum odio illo iste tempora quas quam facilis itaque quo, dicta, omnis similique
-                        nisi!
+        <section class="cta_container">
+            <article class="cta_container_info">
+                <h1 class="cta_container_info__title">¿Listo para capacitar fácil, rápido y sin complicaciones?</h2>
+                    <p class="cta_container_info__paragraph">Con Quali, accede a cursos 100% virtuales, certificados y
+                        diseñados especialmente para pequeñas empresas. Empieza hoy mismo y cumple con las normativas
+                        sin estrés.
                     </p>
-                    <img src="/img/icon_detail.svg" alt="icon_detail-quali">
-                </article>
-            </section>
+                    <button class="btn_primary"><a href="/pages/contacto.html">Contáctanos</a></button>
+                    <img class="icon_detail_primary" src="/img/icon_detail.svg" alt="icon_detail-quali">
+            </article>
+        </section>
     </main>
-    <hr>
     <!-- Footer principal -->
-    <footer>
-        <div>
-            <img src="/img/logo.svg" alt="logo_quali">
+    <footer class="footer_container">
+        <div class="footer_container_logo">
+            <img class="logo_quali" src="/img/logo.svg" alt="logo_quali">
         </div>
-        <nav>
-            <a href="home.html">Inicio</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="quali.html">Quali</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="footer_container_menu">
+            <a class="footer_container_menu_item" href="home.html">Inicio</a>
+            <a class="footer_container_menu_item" href="cursos.html">Cursos</a>
+            <a class="footer_container_menu_item" href="quali.html">Quali</a>
+            <a class="footer_container_menu_item" href="contacto.html">Contacto</a>
         </nav>
         <div>
-            <h5>Copyright 2025 Quali</h5>
+            <h5 class="footer_copyright">Copyright 2025 Quali</h5>
         </div>
     </footer>
 </body>

@@ -1,0 +1,80 @@
+@media (min-width:1000px) {
+
+    /* CTA */
+
+    .cta_container_info__title {
+        width: 50%;
+    }
+
+    .cta_container_info__paragraph {
+        width: 50%;
+    }
+
+    /* Home */
+
+    .curse_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .we_section_container_cards {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .we_section_container_cards__card {
+        width: 100%;
+    }
+
+    /* Quali */
+
+    .section_quali_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_objetive_quali {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_objetive_quali__text {
+        width: 50%;
+    }
+
+    /* Cursos */
+
+
+    .section_cursos_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .curse_detail_container__cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_cursos_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Single_curso */
+
+    .section_description_curse_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card_container {
+        order: 2;
+    }
+
+    .description_curse {
+    width: 60%;
+    display: flex;
+    }
+
+}

@@ -1,0 +1,29 @@
+.login_container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 80px;
+}
+
+.section_login_description {
+    width: 50%;
+}
+
+.section_login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.section_login_inputs__campo {
+    border: none;
+    border-bottom: solid var(--black-border);
+}
+
+.section_login_inputs__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}

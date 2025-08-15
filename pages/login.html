@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style_login.css">
 </head>
 
 <body>
@@ -30,30 +31,27 @@
     </header>
     <!-- Sección para iniciar sesión -->
     <main>
-        <section>
-            <article>
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab ullam ut veniam tempore id quos
-                    quam,
-                    adipisci laborum fuga non repudiandae sit expedita quasi? Possimus, odit aliquam! Molestias,
-                    suscipit!
+        <section class="login_container">
+            <article class="section_login_description">
+                <h2>Bienvenido de nuevo a Quali</h2>
+                <p>Accede a tu cuenta para continuar tu capacitación, retomar tus cursos y consultar tu progreso. 
+                    <br><br>
+                Si aún no tienes una cuenta, puedes registrarte en pocos minutos y comenzar a aprender hoy mismo.
                 </p>
             </article>
-            <div>
+            <div class="section_login_inputs">
                 <figure>
-                    <img src="" alt="icon_user">
+                    <img src="/img/login_svg.svg" alt="icon_user">
                 </figure>
-                <form action="">
-                    <label for="user_name">
+                <form class="section_login_form" action="">
+                    <label class="section_login_inputs__label" for="user_name">
                         <span>Usuario</span>
-                        <input type="text" name="user_name" id="user_name" required>
+                        <input class="section_login_inputs__campo" type="text" name="user_name" id="user_name" required>
                     </label>
-                    <br><br>
-                    <label for="password">
+                    <label class="section_login_inputs__label" for="password">
                         <span>Contraseña</span>
-                        <input type="text" name="password" id="password" required>
+                        <input class="section_login_inputs__campo" type="text" name="password" id="password" required>
                     </label>
-                    <br><br>
                     <button type="submit">Iniciar sesión</button>
                 </form>
             </div>

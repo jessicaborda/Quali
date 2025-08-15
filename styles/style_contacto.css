@@ -1,18 +1,20 @@
 .section_contact_container {
     display: flex;
-    flex-direction: row;
-    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
     gap: 40px;
 }
 
 .section_contact_description {
-    width: 50%;
+    width: 100%;
 }
 
 .section_contact_info {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .section_contact_info__phone {

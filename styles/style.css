@@ -25,33 +25,33 @@ h3, h4, h5, h6, p, a {
     font-family: 'Inter', sans-serif;
 }
 
-h1{
+h1 {
     color: var(--color-secundario);
-    font-size: 40px;
+    font-size: clamp(2rem, 5vw, 2.5rem); /* 32px a 40px */
     font-weight: 700;
 }
 
 h2 {
     color: var(--black-text);
-    font-size: 32px;
+    font-size: clamp(1.75rem, 4vw, 2rem); /* 28px a 32px */
     font-weight: 700;
 }
 
 h3 {
     color: var(--color-secundario);
-    font-size: 24px;
+    font-size: clamp(1.25rem, 3vw, 1.5rem); /* 20px a 24px */
     font-weight: 500;
 }
 
 h4 {
     color: var(--black-text);
-    font-size: 16px;
+    font-size: clamp(1rem, 2.5vw, 1.125rem); /* 16px a 18px */
     font-weight: 500;
 }
 
 p {
     color: var(--paragraph-text);
-    font-size: 16px;
+    font-size: clamp(0.875rem, 2vw, 1rem); /* 14px a 16px */
     font-weight: 300;
 }
 
@@ -106,13 +106,13 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-primario);
-    padding: 16px 80px;
+    padding: 2% 2%;
 }
 
 .header_container_menu{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 10%;
 }
 
 .header_container_menu:hover{
@@ -122,7 +122,8 @@ p {
 .header_container_menu__nav{
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    width: 100%;
+    gap: 5%;
 }
 
 .header_container_menu__item{
@@ -136,7 +137,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 160px 280px;
+    padding: 10%;
 }
 
 .hero_container_info{
@@ -147,6 +148,7 @@ p {
     gap: 1rem;
     text-align: center;
     color: var(--white-text);
+    width: 100%;
 }
 
 .container_info__paragraph {
@@ -168,7 +170,7 @@ p {
     flex: 1;
     height: fit-content;
     gap: 0;
-    background-color: var(--white-background);
+    background-color: var(--gray-background);
     color: var(--paragraph-text);
     padding: 10px;
     border: none;
@@ -182,7 +184,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 80px;
+    padding: 10%;
     color: var(--white-text);
 }
 
@@ -194,12 +196,13 @@ p {
     text-align: left;
 }
 
-.cta_container_info__title, .cta_container_info__paragraph {
-    width: 50%;
+.cta_container_info__title {
+    width: 100%;
 }
 
 .cta_container_info__paragraph {
     color: var(--white-text);
+    width: 100%;
 }
 
 /* Footer principal */

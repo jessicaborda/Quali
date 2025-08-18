@@ -1,0 +1,68 @@
+:root {
+    --color-primario: #1A2E66;
+    --color-secundario: #F4B942;
+    --color-enfasis: #42D796;
+    --white-text: #ffffff;
+    --black-text: #000000;
+    --paragraph-text: #333333;
+    --white-background: #ffff;
+    --gray-background: #fafafa;
+    --black-border: #020202;
+}
+
+body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .navbar-custom {
+      background-color: var(--color-primario);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: var(--color-enfasis) !important;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+        color: var(--white-text);
+    }
+
+    .nav-link:hover {
+        color: var(--color-secundario);
+        font-weight: 600;
+    }
+
+    .nav-link:active {
+        color: var(--color-secundario);
+        font-weight: 600;
+    }
+
+    .btn-custom {
+      background-color: var(--color-secundario);
+      color: var(--black-text);
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 0.4rem 1.2rem;
+    }
+
+    .card-custom {
+      background-color: var(--gray-background);
+      border: none;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: var(--color-primario);
+    }
+
+    footer a {
+      color: var(--white-text);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+

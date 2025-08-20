@@ -200,6 +200,7 @@ p {
 
 .header_container_menu__item:hover{
     color: var(--color-secundario);
+    font-weight: 600;
 }
 
 /* Hero */

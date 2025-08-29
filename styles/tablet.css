@@ -6,6 +6,11 @@
         flex-direction: column;
     }
 
+    .curse_container_certificate {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Quali */
 
     .we_section_container_cards {

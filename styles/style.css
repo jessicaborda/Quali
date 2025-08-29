@@ -16,10 +16,21 @@
 }
 
 /* Estilos globales */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
 body {
-    margin: 0;
     animation: fadeIn 0.6s forwards;
+}
+
+main {
+  flex: 1;
+  max-width: 1280px;
+    margin: 0 auto;
 }
 
 /* Animación al entrar */
@@ -171,37 +182,32 @@ p {
 
 /* Header principal */
 
-.header_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-primario);
-    padding: 16px 8px;
-}
+.navbar-custom {
+      background-color: var(--color-primario);
+    }
 
-.header_container_menu {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
+    .navbar-brand {
+      font-weight: bold;
+      color: var(--color-enfasis) !important;
+      font-size: 1.5rem;
+    }
 
-.header_container_menu__nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 24px;
-}
+    .nav-link {
+        color: var(--white-text);
+    }
 
-.header_container_menu__item {
-    color: var(--white-text);
-    text-decoration: none;
-}
+    .nav-link:hover {
+        color: var(--color-secundario);
+        font-weight: 600;
+    }
 
-.header_container_menu__item:hover{
-    color: var(--color-secundario);
-    font-weight: 600;
-}
+    .btn-custom {
+      background-color: var(--color-secundario);
+      color: var(--black-text);
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 0.4rem 1.2rem;
+    }
 
 /* Hero */
 
@@ -280,28 +286,116 @@ p {
 
 /* Footer principal */
 
-.footer_container {
+footer {
+      background-color: var(--color-primario);
+    }
+
+    footer a {
+      color: var(--white-text);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 991.98px) {
+
+    .navbar-collapse {
+      position: absolute;
+      top: 100%;             
+      right: 1rem;          
+      width: 260px;          
+      background-color: var(--color-primario);
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem; 
+    }
+
+    .nav-link:active {
+        color: var(--color-secundario);
+        font-weight: 600;
+    }
+
+    .navbar-collapse form,
+    .navbar-collapse .btn {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+  }
+
+  /* Sección cursos */
+
+.curse_container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    padding: 8%;
+    gap: 2rem;
+}
+
+.curse_container_info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: fit-content;
+    text-align: left;
+    gap: 16px;
+}
+
+/* FAQ */
+
+.section_faq_container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    gap: 40px;
+    justify-content: center;
+    background-color: var(--gray-background);
+}
+
+.section_faq_description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+.faq_container_collapsible{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: fit-content;
+}
+
+.faq_container_collapsible__option{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: fit-content;
+    gap: 0;
     background-color: var(--color-primario);
-    padding: 24px 16px;
+    color: var(--white-text);
+    padding: 10px;
+    border: none;
+    border-bottom: solid var(--color-enfasis);
 }
 
-.footer_container_menu {
+.faq_container_collapsible__option__text{
+    width: fit-content;
+}
+
+.faq_option_id {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
-
-.footer_container_menu_item {
-    padding: 0 8px;
-    border-right: solid var(--white-background);
-    color: var(--white-text);
-}
-
-.footer_copyright {
-    color: var(--white-text);
-    font-weight: 300;
+    width: 300px;
+    height: fit-content;
+    background-color: var(--white-background);
+    color: var(--paragraph-text);
 }

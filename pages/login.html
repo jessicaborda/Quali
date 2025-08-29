@@ -5,71 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/style_login.css">
+    <script src="/logic/login_event.js" defer></script>
 </head>
 
 <body>
-    <!-- Header principal -->
-    <header class="header_container">
-        <img src="/img/logo.svg" alt="logo_quali">
-        <section class="header_container_menu">
-            <nav class="header_container_menu__nav">
-                <a class="header_container_menu__item" href="home.html">Inicio</a>
-                <a class="header_container_menu__item" href="cursos.html">Cursos</a>
-                <a class="header_container_menu__item" href="quali.html">Quali</a>
-                <a class="header_container_menu__item" href="contacto.html">Contacto</a>
-            </nav>
-            <div>
-                <input class="header_container__input" type="text" id="search" placeholder="Buscar...">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container"> <img src="/img/logo.svg" alt="logo_quali"> <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quali.html">Quali</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex me-3"> <input class="form-control rounded-pill" type="search" placeholder="Buscar">
+                </form> <a href="login.html" class="btn btn-light me-2">Iniciar</a> <a href="register.html"
+                    class="btn btn-outline-light">Registrar</a>
             </div>
-            <nav class="header_container_menu__nav">
-                <a class="header_container_menu__item" href="login.html">Iniciar Sesión</a>
-                <a class="header_container_menu__item" href="register.html">Registrar</a>
-            </nav>
-        </section>
-    </header>
+        </div>
+    </nav>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
     <!-- Sección para iniciar sesión -->
     <main>
         <section class="login_container">
             <article class="section_login_description">
                 <h2>Bienvenido de nuevo a Quali</h2>
-                <p>Accede a tu cuenta para continuar tu capacitación, retomar tus cursos y consultar tu progreso. 
+                <p>Accede a tu cuenta para continuar tu capacitación, retomar tus cursos y consultar tu progreso.
                     <br><br>
-                Si aún no tienes una cuenta, puedes registrarte en pocos minutos y comenzar a aprender hoy mismo.
+                    Si aún no tienes una cuenta, puedes registrarte en pocos minutos y comenzar a aprender hoy mismo.
                 </p>
             </article>
             <div class="section_login_inputs">
                 <figure>
                     <img src="/img/login_svg.svg" alt="icon_user">
                 </figure>
-                <form class="section_login_form" action="">
+                <form class="section_login_form" id="loginForm">
                     <label class="section_login_inputs__label" for="user_name">
                         <span>Usuario</span>
                         <input class="section_login_inputs__campo" type="text" name="user_name" id="user_name" required>
                     </label>
+
                     <label class="section_login_inputs__label" for="password">
                         <span>Contraseña</span>
-                        <input class="section_login_inputs__campo" type="text" name="password" id="password" required>
+                        <input class="section_login_inputs__campo" type="password" name="password" id="password"
+                            required>
                     </label>
+
                     <button type="submit">Iniciar sesión</button>
                 </form>
             </div>
     </main>
     </section>
-    <!-- Footer principal -->
-    <footer class="footer_container">
-        <div class="footer_container_logo">
-            <img class="logo_quali" src="/img/logo.svg" alt="logo_quali">
-        </div>
-        <nav class="footer_container_menu">
-            <a class="footer_container_menu_item" href="home.html">Inicio</a>
-            <a class="footer_container_menu_item" href="cursos.html">Cursos</a>
-            <a class="footer_container_menu_item" href="quali.html">Quali</a>
-            <a class="footer_container_menu_item" href="contacto.html">Contacto</a>
-        </nav>
-        <div>
-            <h5 class="footer_copyright">Copyright 2025 Quali</h5>
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <div class="container-fluid">
+            <img src="/img/logo.svg" alt="logo_quali">
+            <p class="mb-0" style="color: white;">Copyright 2025 - Quali</p>
+            <div class="mt-2">
+                <a href="home.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="quali.html">Quali</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
         </div>
     </footer>
 </body>

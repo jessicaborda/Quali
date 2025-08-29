@@ -19,11 +19,12 @@
 .section_login_inputs__campo {
     border: none;
     border-bottom: solid var(--black-border);
+    width: 100%;
 }
 
 .section_login_inputs__label {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 1;
     gap: 24px;
 }

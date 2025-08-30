@@ -141,8 +141,8 @@
         e.preventDefault();
 
         // Cambiar video
-        const newSrc = link.getAttribute("data-video") + "&autoplay=1";
-        mainVideo.setAttribute("src", newSrc);
+        const newSrc = link.getAttribute("data-video");
+          mainVideo.setAttribute("src", newSrc);
 
         // Cambiar título y descripción
         videoTitle.textContent = link.getAttribute("data-title");

@@ -1,8 +1,8 @@
 .register_container {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-    padding: 80px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 8%;
     justify-content: center;
     align-items: center;
 }
@@ -10,25 +10,29 @@
 .section_register_inputs {
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
 
 .section_register_description {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .section_register_form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: left;
-    gap: 8px;
+    gap: 2rem;
 }
 
 .section_register_inputs__campo {
     border: none;
     border-bottom: solid var(--black-border);
-    width: 100%;
+    flex: 1;
 }
 
 .section_register_inputs__label {

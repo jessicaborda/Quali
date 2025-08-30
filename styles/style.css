@@ -25,12 +25,12 @@ html, body {
 
 body {
     animation: fadeIn 0.6s forwards;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 main {
   flex: 1;
-  max-width: 1280px;
-    margin: 0 auto;
 }
 
 /* Animación al entrar */
@@ -332,70 +332,4 @@ footer {
 
   }
 
-  /* Sección cursos */
-
-.curse_container{
-    display: flex;
-    flex-direction: column;
-    padding: 8%;
-    gap: 2rem;
-}
-
-.curse_container_info{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: fit-content;
-    text-align: left;
-    gap: 16px;
-}
-
-/* FAQ */
-
-.section_faq_container {
-    display: flex;
-    flex-direction: column;
-    padding: 8%;
-    gap: 40px;
-    justify-content: center;
-    background-color: var(--gray-background);
-}
-
-.section_faq_description {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-}
-
-.faq_container_collapsible{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: fit-content;
-}
-
-.faq_container_collapsible__option{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: fit-content;
-    gap: 0;
-    background-color: var(--color-primario);
-    color: var(--white-text);
-    padding: 10px;
-    border: none;
-    border-bottom: solid var(--color-enfasis);
-}
-
-.faq_container_collapsible__option__text{
-    width: fit-content;
-}
-
-.faq_option_id {
-    display: flex;
-    width: 300px;
-    height: fit-content;
-    background-color: var(--white-background);
-    color: var(--paragraph-text);
-}
+  

@@ -14,37 +14,47 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <div class="container">
-            <img src="/img/logo.svg" alt="logo_quali">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+        <div class="container"> <img src="/img/logo.svg" alt="logo_quali"> <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-3">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
                     <li class="nav-item"><a class="nav-link" href="quali.html">Quali</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-                <form class="d-flex me-3">
-                    <input class="form-control rounded-pill" type="search" placeholder="Buscar">
-                </form>
-                <a href="login.html" class="btn btn-light me-2">Iniciar</a>
-                <a href="register.html" class="btn btn-outline-light">Registrar</a>
+                <form class="d-flex me-3"> <input class="form-control rounded-pill" type="search" placeholder="Buscar">
+                </form> <a href="login.html" class="btn btn-light me-2">Iniciar</a> <a href="register.html"
+                    class="btn btn-outline-light">Registrar</a>
             </div>
         </div>
     </nav>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
     <!-- Contenido principal -->
     <div class="container my-5">
-        <h2 class="fw-bold mb-4">Curso: Manipulación Higiénica de Alimentos</h2>
-
+        <h2 class="fw-bold mb-4">Curso: Bioseguridad para entornos laborales</h2>
         <div class="row">
             <!-- Video principal -->
             <div class="col-lg-9 col-12 mb-4">
                 <div class="ratio ratio-16x9 shadow-sm">
-                    <iframe src="https://www.youtube.com/embed/5-S-qh3Hphs?si=kj6JZDly5Wb_Cyze"
-                        title="YouTube video player" allowfullscreen></iframe>
+                    <iframe id="main-video" width="656" height="369" src="https://www.youtube.com/embed/oUbYsEqAXUM"
+                        title="Principios de bioseguridad." frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!-- Texto descriptivo dinámico -->
+                <div class="card mt-5 p-4 shadow-sm">
+                    <h5 id="video-title" class="fw-bold">Módulo 0 - Principios básicos de bioseguridad
+                    </h5>
+                    <p id="video-description"> Conoce los fundamentos de la bioseguridad y su importancia para prevenir
+                        riesgos en el entorno laboral. Aprende los principios esenciales para crear espacios de trabajo
+                        seguros y saludables. </p> <img src="/img/icon_detail.svg" alt="icon_detail-quali" class="mt-3"
+                        style="width: 40px;">
                 </div>
             </div>
 
@@ -54,63 +64,94 @@
                     <!-- Video 1 -->
                     <div class="card shadow-sm">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/Si9_7S90DxM?si=aiViVvD11kaRpBo0" title="Módulo 1"
-                                allowfullscreen></iframe>
+                            <iframe width="656" height="369"
+                                src="https://www.youtube.com/embed/X2SCnEBe51E"
+                                title="Uso y mantenimiento correcto de EPP" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="card-body p-2">
-                            <a href="#" class="stretched-link text-decoration-none fw-semibold">Módulo 1 -
-                                Introducción</a>
+                            <a href="#" class="video-link stretched-link text-decoration-none fw-semibold"
+                                data-video="https://www.youtube.com/embed/X2SCnEBe51E"
+                                data-title="Módulo 1 - Introducción"
+                                data-description="Descubre cómo seleccionar, usar y retirar correctamente los equipos de protección personal. Este video te guiará paso a paso para garantizar una protección eficaz en cada tarea.">
+                                Módulo 1 - Uso correcto de EPP
+                            </a>
                         </div>
                     </div>
 
                     <!-- Video 2 -->
                     <div class="card shadow-sm">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/aoOh7wqNpDM?si=vxblJk5wu8ubwjpS" title="Módulo 2"
-                                allowfullscreen></iframe>
+                            <iframe width="656" height="369"
+                                src="https://www.youtube.com/embed/JfB1lLhgz-E"
+                                title="✅ PROTOCOLOS de LIMPIEZA y DESINFECCIÓN  🏣🚑" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="card-body p-2">
-                            <a href="#" class="stretched-link text-decoration-none fw-semibold">Módulo 2 - Higiene
-                                Personal</a>
+                            <a href="#" class="video-link stretched-link text-decoration-none fw-semibold"
+                                data-video="https://www.youtube.com/embed/JfB1lLhgz-E"
+                                data-title="Módulo 2 - Higiene Personal"
+                                data-description="Aprende las prácticas clave de limpieza y desinfección para reducir riesgos de contaminación. Un recurso práctico para mantener áreas de trabajo seguras y libres de agentes nocivos.">
+                                Módulo 2 - Protocolos de higiene y desinfección
+                            </a>
                         </div>
                     </div>
 
                     <!-- Video 3 -->
                     <div class="card shadow-sm">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/E3_Mgx3TBaU?si=ucjdS3MCAMfnDeQF" title="Módulo 3"
-                                allowfullscreen></iframe>
+                            <iframe width="656" height="369"
+                                src="https://www.youtube.com/embed/WlX0HFH-x2g" title="Prevención de riesgos biológicos"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="card-body p-2">
-                            <a href="#" class="stretched-link text-decoration-none fw-semibold">Módulo 3 - Contaminación
-                                Cruzada</a>
+                            <a href="#" class="video-link stretched-link text-decoration-none fw-semibold"
+                                data-video="https://www.youtube.com/embed/WlX0HFH-x2g"
+                                data-title="Módulo 3 - Contaminación Cruzada"
+                                data-description="Este video explica cómo identificar y prevenir la exposición a agentes biológicos en el entorno laboral. Incluye recomendaciones clave para proteger a los colaboradores, especialmente en entornos con riesgo de transmisión biológica, como laboratorios, centros de salud o industrias.">
+                                Módulo 3 - Prevención de riesgos biológicos
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Texto descriptivo -->
-        <div class="card mt-5 p-4 shadow-sm">
-            <h4 class="fw-bold">Buenas prácticas en la manipulación de alimentos</h4>
-            <p>
-                En este módulo aprenderás los principios clave para asegurar que los alimentos sean seguros desde su
-                recepción hasta su consumo.
-                Se abordarán prácticas fundamentales de higiene personal, control de contaminación cruzada, limpieza de
-                superficies, almacenamiento correcto y manejo adecuado de temperaturas.
-            </p>
-            <p class="mb-0">
-                Estas buenas prácticas son esenciales para prevenir enfermedades transmitidas por alimentos, cumplir con
-                la normativa sanitaria y garantizar la calidad del servicio en establecimientos de comida, panaderías,
-                cafeterías, supermercados, entre otros.
-            </p>
-            <img src="/img/icon_detail.svg" alt="icon_detail-quali" class="mt-3" style="width: 40px;">
-        </div>
     </div>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const mainVideo = document.getElementById("main-video");
+            const videoTitle = document.getElementById("video-title");
+            const videoDescription = document.getElementById("video-description");
+            const links = document.querySelectorAll(".video-link");
+
+            links.forEach(link => {
+                link.addEventListener("click", e => {
+                    e.preventDefault();
+
+                    // Cambiar video
+                    const newSrc = link.getAttribute("data-video");
+                    mainVideo.setAttribute("src", newSrc);
+
+                    // Cambiar título y descripción
+                    videoTitle.textContent = link.getAttribute("data-title");
+                    videoDescription.textContent = link.getAttribute("data-description");
+
+                    // Subir la vista al video principal
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            });
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="text-white text-center py-3 mt-5">
-        <div class="container">
+        <div class="container-fluid">
             <img src="/img/logo.svg" alt="logo_quali">
             <p class="mb-0" style="color: white;">Copyright 2025 - Quali</p>
             <div class="mt-2">
